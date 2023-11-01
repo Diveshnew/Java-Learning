@@ -2,9 +2,9 @@ public class App {
     public static void main(String[] args){
 
         // Nested Loops
-        int n=3;
-        for(int i=0 ; i<n ; i++){
-            for(int j=0 ; j<n ; j++){
+        int c=3;
+        for(int g=0 ; g<c ; g++){
+            for(int y=0 ; y<c ; y++){
                 System.out.print("* ");
             }
             System.out.println();
@@ -73,7 +73,7 @@ public class App {
         }
 
 
-        // This is a pattern program for A
+        // This is a pattern program for D
         int B=10;
         for(int i=0 ; i<B ; i++){
             for(int j=0 ; j<B ; j++ ){
@@ -86,5 +86,32 @@ public class App {
             }
             System.out.println();
         }
+
+        // This is a pattern program for a different pattern
+        int n=19;
+        for(int i=0 ; i<n ; i++){
+            for(int j=0 ; j<n ; j++){
+                if(i==j || i+j == n-1 || i==0 || j==0 || i==n-1 || j==n-1 || i+j == (n-2)/2 || i-j==(n-1)/2 || j-i==(n-1)/2 || i+j==n-1 + (n-1)/2){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("         ");
+            
+            // This is a pattern program for a diagonal pattern
+                for(int j=0 ; j<n ; j++){
+                    if(i+j == (n-1)/2 || i-j==(n-1)/2 || j-i==(n-1)/2 || i+j==n-1 + (n-1)/2){
+                        System.out.print("*");
+                    }
+                    else{
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println();
+            
+        }
+
     }
 }
